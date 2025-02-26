@@ -1,132 +1,189 @@
-import React from "react";
-import {
-  FaFilm,
-  FaRobot,
-  FaImage,
-  FaIcons,
-  FaCode,
-  FaGoogle,
-  FaMusic,
-  FaGlobe,
-  FaGamepad,
-  FaBook,
-  FaNewspaper,
-  FaTools,
-} from "react-icons/fa";
+import React, { useState } from "react";
+import { FaIcons, FaRobot, FaCode, FaServer, FaPalette, FaPrint, FaDatabase, FaLink, FaFile, FaGraduationCap } from "react-icons/fa";
 import "./QuickLinks.css";
 import logo from "/quick2.png";
+
 const QuickLinks = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [expandedCategory, setExpandedCategory] = useState(null);
+
   const categories = [
     {
-      title: "Entertainment",
-      icon: <FaFilm />,
-      links: [
-        { name: "Netflix", url: "https://netflix.com" },
-        { name: "YouTube", url: "https://youtube.com" },
-        { name: "Prime Video", url: "https://primevideo.com" },
-        { name: "Disney+", url: "https://disneyplus.com" },
-        { name: "Hulu", url: "https://hulu.com" },
-      ],
-    },
-    {
-      title: "AI Tools",
-      icon: <FaRobot />,
-      links: [
-        { name: "ChatGPT", url: "https://chat.openai.com" },
-        { name: "Midjourney", url: "https://midjourney.com" },
-        { name: "Hugging Face", url: "https://huggingface.co" },
-        { name: "Leonardo AI", url: "https://leonardo.ai" },
-        { name: "Runway ML", url: "https://runwayml.com" },
-      ],
-    },
-    {
-      title: "Image Resources",
-      icon: <FaImage />,
-      links: [
-        { name: "Unsplash", url: "https://unsplash.com" },
-        { name: "Pexels", url: "https://pexels.com" },
-        { name: "Pixabay", url: "https://pixabay.com" },
-        { name: "Freepik", url: "https://freepik.com" },
-        { name: "Canva", url: "https://canva.com" },
-      ],
-    },
-    {
-      title: "Icons",
+      title: "Icons & Graphics",
       icon: <FaIcons />,
       links: [
-        { name: "Font Awesome", url: "https://fontawesome.com" },
-        { name: "Flaticon", url: "https://flaticon.com" },
-        { name: "Icons8", url: "https://icons8.com" },
-        { name: "Material Icons", url: "https://fonts.google.com/icons" },
+        { name: "LottieFiles", url: "https://lottiefiles.com/" },
+        { name: "Flaticon", url: "https://www.flaticon.com/" },
+        { name: "FontAwesome", url: "https://fontawesome.com/" },
+        { name: "Icons8", url: "https://icons8.com/" },
+        { name: "Heroicons", url: "https://heroicons.com/" },
+        { name: "SVG Repo", url: "https://www.svgrepo.com/" },
+        { name: "Remix Icons", url: "https://remixicon.com/" },
+        { name: "UnDraw", url: "https://undraw.co/" },
+      ],
+    },
+    {
+      title: "AI Tools & Assistants",
+      icon: <FaRobot />,
+      links: [
+        { name: "ChatGPT", url: "https://chatgpt.com/" },
+        { name: "Claude AI", url: "https://claude.ai/" },
+        { name: "Deepseek AI", url: "https://www.deepseek.com/" },
+        { name: "Bolt AI", url: "https://bolt.new/" },
+        { name: "Suno AI", url: "https://www.suno.com/" },
+        { name: "Leonardo AI", url: "https://leonardo.ai/" },
+        { name: "Runway ML", url: "https://runwayml.com/" },
+        { name: "ElevenLabs", url: "https://elevenlabs.io/" },
+      ],
+    },
+    {
+      title: "Deployment & Hosting",
+      icon: <FaServer />,
+      links: [
+        { name: "Vercel", url: "https://vercel.com/" },
+        { name: "Netlify", url: "https://www.netlify.com/" },
+        { name: "Render", url: "https://render.com/" },
+        { name: "Railway", url: "https://railway.app/" },
+        { name: "Firebase", url: "https://firebase.google.com/" },
+        { name: "Heroku", url: "https://www.heroku.com/" },
+        { name: "DigitalOcean", url: "https://www.digitalocean.com/" },
+        { name: "Cloudflare Pages", url: "https://pages.cloudflare.com/" },
       ],
     },
     {
       title: "Developer Tools",
       icon: <FaCode />,
       links: [
-        { name: "GitHub", url: "https://github.com" },
-        { name: "Stack Overflow", url: "https://stackoverflow.com" },
-        { name: "CodePen", url: "https://codepen.io" },
-        { name: "JSFiddle", url: "https://jsfiddle.net" },
-        { name: "MDN Web Docs", url: "https://developer.mozilla.org" },
+        { name: "GitHub", url: "https://github.com/" },
+        { name: "Stack Overflow", url: "https://stackoverflow.com/" },
+        { name: "CodeSandbox", url: "https://codesandbox.io/" },
+        { name: "JSFiddle", url: "https://jsfiddle.net/" },
+        { name: "MDN Web Docs", url: "https://developer.mozilla.org/" },
+        { name: "Postman", url: "https://www.postman.com/" },
+        { name: "Insomnia", url: "https://insomnia.rest/" },
+        { name: "Swagger UI", url: "https://swagger.io/tools/swagger-ui/" },
       ],
     },
-
-
     {
-      title: "MP3 Music",
-      icon: <FaMusic />,
+      title: "UI Libraries & Design",
+      icon: <FaPalette />,
       links: [
-        { name: "Spotify", url: "https://spotify.com" },
-        { name: "SoundCloud", url: "https://soundcloud.com" },
-        { name: "Apple Music", url: "https://music.apple.com" },
-        { name: "Amazon Music", url: "https://music.amazon.com" },
-        { name: "YouTube Music", url: "https://music.youtube.com" },
+        { name: "Material-UI", url: "https://mui.com/" },
+        { name: "Ant Design", url: "https://ant.design/" },
+        { name: "Shadcn", url: "https://ui.shadcn.com/" },
+        { name: "Chakra UI", url: "https://chakra-ui.com/" },
+        { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
+        { name: "Bootstrap", url: "https://getbootstrap.com/" },
+        { name: "Radix UI", url: "https://www.radix-ui.com/" },
+        { name: "DaisyUI", url: "https://daisyui.com/" },
+        { name: "React Spring", url: "https://react-spring.dev/" },
       ],
     },
-    
     {
-      title: "E-Learning",
-      icon: <FaBook />,
+      title: "Printing & Formatting",
+      icon: <FaPrint />,
       links: [
-        { name: "Udemy", url: "https://udemy.com" },
-        { name: "Coursera", url: "https://coursera.org" },
-        { name: "Khan Academy", url: "https://khanacademy.org" },
-        { name: "edX", url: "https://edx.org" },
+        { name: "PrintJS", url: "https://printjs.crabbly.com/" },
+        { name: "PDF.js", url: "https://mozilla.github.io/pdf.js/" },
+        { name: "React-to-Print", url: "https://www.npmjs.com/package/react-to-print" },
       ],
     },
-    
     {
-        title: "IT Tools",
-        icon: <FaTools />,
-        links: [
-          { name: "Image Converter", url: "https://image-converter.com" },
-          { name: "Image Reducer", url: "https://reduceimages.com" },
-          { name: "Background Remover", url: "https://remove.bg" },
-          { name: "PDF Converter", url: "https://ilovepdf.com" },
-        ],
-      },
+      title: "Databases & Backend",
+      icon: <FaDatabase />,
+      links: [
+        { name: "MongoDB", url: "https://www.mongodb.com/" },
+        { name: "Firebase Firestore", url: "https://firebase.google.com/" },
+        { name: "Supabase", url: "https://supabase.com/" },
+        { name: "PlanetScale", url: "https://planetscale.com/" },
+        { name: "Redis", url: "https://redis.io/" },
+      ],
+    },
+    {
+      title: "Productivity & Utilities",
+      icon: <FaLink />,
+      links: [
+        { name: "Excalidraw", url: "https://excalidraw.com/" },
+        { name: "Figma", url: "https://www.figma.com/" },
+        { name: "Notion", url: "https://www.notion.so/" },
+        { name: "Trello", url: "https://trello.com/" },
+        { name: "Asana", url: "https://asana.com/" },
+        { name: "Obsidian", url: "https://obsidian.md/" },
+        { name: "JSON Formatter", url: "https://jsonformatter.org/" },
+        { name: "Regex101", url: "https://regex101.com/" },
+        { name: "Lorem Ipsum Generator", url: "https://loremipsum.io/" },
+      ],
+    },
+    {
+      title: "File & Data Tools",
+      icon: <FaFile />,
+      links: [
+        { name: "Remove.bg", url: "https://www.remove.bg/" },
+        { name: "TinyPNG", url: "https://tinypng.com/" },
+        { name: "CloudConvert", url: "https://cloudconvert.com/" },
+        { name: "iLovePDF", url: "https://www.ilovepdf.com/" },
+      ],
+    },
+    {
+      title: "Learning Platforms",
+      icon: <FaGraduationCap />,
+      links: [
+        { name: "Udemy", url: "https://udemy.com/" },
+        { name: "Coursera", url: "https://coursera.org/" },
+        { name: "Khan Academy", url: "https://khanacademy.org/" },
+        { name: "edX", url: "https://edx.org/" },
+        { name: "Frontend Masters", url: "https://frontendmasters.com/" },
+      ],
+    },
   ];
 
   const handleClick = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
+  const handleCategoryClick = (title) => {
+    setExpandedCategory(expandedCategory === title ? null : title);
+  };
+
+  const filteredCategories = searchTerm 
+    ? categories.map(category => ({
+        ...category,
+        links: category.links.filter(link => 
+          link.name.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+      })).filter(category => category.links.length > 0)
+    : categories;
+
   return (
     <div className="app-container">
-      <div style={{ display: "flex",justifyContent:"center", alignItems: "center", gap: "10px" }}>
-        <img src={logo} alt="Quick Links Logo" width="50" height="50" />
-        <h1>Quick Links</h1>
+      <div className="header">
+        <div className="logo-container">
+          <img src={logo} alt="Quick Links Logo" width="50" height="50" />
+          <h1 style={{color:"#FFFFFF"}}>Quick Links</h1>
+        </div>
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search resources..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+        </div>
       </div>
 
       <div className="categories-grid">
-        {categories.map((category) => (
+        {filteredCategories.map((category) => (
           <div key={category.title} className="category-card">
-            <div className="category-header">
+            <div 
+              className="category-header"
+              onClick={() => handleCategoryClick(category.title)}
+            >
               <span className="category-icon">{category.icon}</span>
               <h2>{category.title}</h2>
+              <span className="link-count">{category.links.length}</span>
             </div>
-            <div className="links-container">
+            <div className={`links-container ${expandedCategory === category.title ? 'expanded' : ''}`}>
               {category.links.map((link) => (
                 <button
                   key={link.name}

@@ -1,101 +1,153 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.search-container {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3182ce;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  position: relative;
+}
+
+.category-icon {
+  font-size: 22px;
+  margin-right: 12px;
+  color: #3182ce;
+}
+
+.category-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  flex-grow: 1;
+}
+
+.link-count {
+  background-color: #3182ce;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 15px;
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.links-container.expanded {
+  max-height: 500px;
+}
+
+.link-button {
+  padding: 8px 12px;
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2d3748;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  text-align: center;
+  word-break: break-word;
+}
+
+.link-button:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.link-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  .app-container {
-    padding: 20px;
-  }
-  
-  h1 {
-    color: #333;
-    margin-bottom: 2rem;
+  .search-container {
+    width: 100%;
+    max-width: none;
   }
   
   .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    grid-template-columns: 1fr;
   }
-  
-  .category-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-  }
-  
-  .category-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .category-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .category-icon {
-    font-size: 1.5rem;
-    color: #646cff;
-  }
-  
-  h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  
-  .link-button {
-    background-color: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    padding: 0.8rem 1.2rem;
-    font-size: 1rem;
-    color: #495057;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  
-  .link-button:hover {
-    background-color: #646cff;
-    color: white;
-    border-color: #646cff;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    .category-card {
-      background: #1a1a1a;
-    }
-  
-    h1, h2 {
-      color: #fff;
-    }
-  
-    .link-button {
-      background-color: #2a2a2a;
-      border-color: #333;
-      color: #fff;
-    }
-  }
-  .app-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    margin-bottom: 2rem;
-  }
-  
+}
