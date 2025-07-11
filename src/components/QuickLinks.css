@@ -131,7 +131,16 @@
 .link-button:active {
   transform: translateY(0);
 }
-
+.links-container.expanded {
+  max-height: 400px; /* or a value that fits your design */
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .links-container.expanded {
+    max-height: none;
+    overflow-y: auto;
+  }
+}
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -146,4 +155,5 @@
   .categories-grid {
     grid-template-columns: 1fr;
   }
+
 }
