@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaIcons, FaRobot, FaCode, FaServer, FaPalette, FaPrint, FaDatabase, FaLink, FaFile, FaGraduationCap } from "react-icons/fa";
 import "./QuickLinks.css";
-import logo from "/quick2.png";
+import logo from "/Devdecks_App_Logo_with_Vibrant_Contrast-removebg-preview (1).png";
 
 const QuickLinks = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -158,8 +158,8 @@ const QuickLinks = () => {
     <div className="app-container">
       <div className="header">
         <div className="logo-container">
-          <img src={logo} alt="Quick Links Logo" width="50" height="50" />
-          <h1 style={{color:"#FFFFFF"}}>Quick Links</h1>
+          <img src={logo} alt="Quick Links Logo" width="100" height="100" />
+          <h1 style={{color:"#FFFFFF"}}>DevDecks</h1>
         </div>
         <div className="search-container">
           <input
