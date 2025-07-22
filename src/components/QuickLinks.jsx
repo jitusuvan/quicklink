@@ -40,6 +40,7 @@ const QuickLinks = () => {
         { name: "v0.dev", url: "https://v0.dev/" },
         { name: "Builder.io", url: "https://www.builder.io/" },
         { name: "Shuffle UI", url: "https://shuffle.dev/" },
+        { name: "Reddy ai", url: "https://readdy.ai/" },
         { name: "Figma to Code", url: "https://figma-to-code.com/" },
         { name: "CodeMyUI", url: "https://codemyui.com/" },
         { name: "UIverse", url: "https://uiverse.io/" },
