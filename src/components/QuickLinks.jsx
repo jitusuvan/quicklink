@@ -145,6 +145,7 @@ const QuickLinks = () => {
         { name: "Framer Motion", url: "https://www.framer.com/motion/" },
         { name: "React Beautiful DnD", url: "https://github.com/atlassian/react-beautiful-dnd" },
         { name: "React Suite", url: "https://rsuitejs.com/" },
+        { name: "Lenis", url: "https://lenis.darkroom.engineering/" },
       ],
     },
     {
