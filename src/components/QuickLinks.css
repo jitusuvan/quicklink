@@ -123,10 +123,10 @@
   word-break: break-word;
 }
 
-.link-button:hover {
+/* .link-button:hover {
   background-color: #e2e8f0;
   transform: translateY(-2px);
-}
+} */
 
 .link-button:active {
   transform: translateY(0);

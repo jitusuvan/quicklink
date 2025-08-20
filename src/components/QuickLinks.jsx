@@ -1,5 +1,16 @@
 import React, { useState } from "react";
-import { FaIcons, FaRobot, FaCode, FaServer, FaPalette, FaPrint, FaDatabase, FaLink, FaFile, FaGraduationCap } from "react-icons/fa";
+import {
+  FaIcons,
+  FaRobot,
+  FaCode,
+  FaServer,
+  FaPalette,
+  FaPrint,
+  FaDatabase,
+  FaLink,
+  FaFile,
+  FaGraduationCap,
+} from "react-icons/fa";
 import "./QuickLinks.css";
 import logo from "/Devdecks_App_Logo_with_Vibrant_Contrast-removebg-preview (1).png";
 
@@ -7,12 +18,12 @@ const QuickLinks = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedCategory, setExpandedCategory] = useState(null);
   const [hoveredCategory, setHoveredCategory] = useState(null);
-  
+
   const categories = [
     {
       title: "AI Code Assistants",
       icon: <FaCode />,
-      color: "#9D50BB",
+    
       links: [
         { name: "ChatGPT", url: "https://chatgpt.com/" },
         { name: "Claude AI", url: "https://claude.ai/" },
@@ -34,7 +45,7 @@ const QuickLinks = () => {
     {
       title: "UI Generators & Builders",
       icon: <FaPalette />,
-      color: "#FF7E5F",
+    
       links: [
         { name: "v0.dev", url: "https://v0.dev/" },
         { name: "Builder.io", url: "https://www.builder.io/" },
@@ -50,7 +61,7 @@ const QuickLinks = () => {
     {
       title: "Deployment & Hosting",
       icon: <FaServer />,
-      color: "#43cea2", // green
+    
       links: [
         { name: "Vercel", url: "https://vercel.com/" },
         { name: "Netlify", url: "https://www.netlify.com/" },
@@ -69,7 +80,7 @@ const QuickLinks = () => {
     {
       title: "Developer Tools",
       icon: <FaCode />,
-      color: "#fc5c7d", // pink
+     
       links: [
         { name: "GitHub", url: "https://github.com/" },
         { name: "Stack Overflow", url: "https://stackoverflow.com/" },
@@ -92,7 +103,7 @@ const QuickLinks = () => {
     {
       title: "Testing Tools",
       icon: <FaCode />,
-      color: "#c94b4b",
+     
       links: [
         { name: "Cypress", url: "https://www.cypress.io/" },
         { name: "Playwright", url: "https://playwright.dev/" },
@@ -101,12 +112,12 @@ const QuickLinks = () => {
         { name: "Mocha", url: "https://mochajs.org/" },
         { name: "Chai", url: "https://www.chaijs.com/" },
         { name: "Vitest", url: "https://vitest.dev/" },
-      ]
-    },    
+      ],
+    },
     {
       title: "Icons & Graphics",
       icon: <FaIcons />,
-      color: "#6a82fb", // blue-purple
+     
       links: [
         { name: "LottieFiles", url: "https://lottiefiles.com/" },
         { name: "Flaticon", url: "https://www.flaticon.com/" },
@@ -129,7 +140,7 @@ const QuickLinks = () => {
     {
       title: "UI Libraries & Design",
       icon: <FaPalette />,
-      color: "#11998e", // teal
+    
       links: [
         { name: "Material-UI", url: "https://mui.com/" },
         { name: "Ant Design", url: "https://ant.design/" },
@@ -141,7 +152,10 @@ const QuickLinks = () => {
         { name: "DaisyUI", url: "https://daisyui.com/" },
         { name: "React Spring", url: "https://react-spring.dev/" },
         { name: "Framer Motion", url: "https://www.framer.com/motion/" },
-        { name: "React Beautiful DnD", url: "https://github.com/atlassian/react-beautiful-dnd" },
+        {
+          name: "React Beautiful DnD",
+          url: "https://github.com/atlassian/react-beautiful-dnd",
+        },
         { name: "React Suite", url: "https://rsuitejs.com/" },
         { name: "Lenis", url: "https://lenis.darkroom.engineering/" },
       ],
@@ -149,11 +163,14 @@ const QuickLinks = () => {
     {
       title: "Printing & Formatting",
       icon: <FaPrint />,
-      color: "#f953c6", // magenta
+    
       links: [
         { name: "PrintJS", url: "https://printjs.crabbly.com/" },
         { name: "PDF.js", url: "https://mozilla.github.io/pdf.js/" },
-        { name: "React-to-Print", url: "https://www.npmjs.com/package/react-to-print" },
+        {
+          name: "React-to-Print",
+          url: "https://www.npmjs.com/package/react-to-print",
+        },
         { name: "DocuSign", url: "https://www.docusign.com/" },
         { name: "DocSpring", url: "https://docspring.com/" },
         { name: "PDFShift", url: "https://pdfshift.io/" },
@@ -162,7 +179,7 @@ const QuickLinks = () => {
     {
       title: "Databases & Backend",
       icon: <FaDatabase />,
-      color: "#43e97b", // green
+    
       links: [
         { name: "MongoDB", url: "https://www.mongodb.com/" },
         { name: "Firebase Firestore", url: "https://firebase.google.com/" },
@@ -178,10 +195,13 @@ const QuickLinks = () => {
     {
       title: "Auth & Security",
       icon: <FaLink />,
-      color: "#FF416C",
+    
       links: [
         { name: "Auth0", url: "https://auth0.com/" },
-        { name: "Firebase Auth", url: "https://firebase.google.com/products/auth" },
+        {
+          name: "Firebase Auth",
+          url: "https://firebase.google.com/products/auth",
+        },
         { name: "Clerk.dev", url: "https://clerk.dev/" },
         { name: "SuperTokens", url: "https://supertokens.com/" },
         { name: "Passkeys.dev", url: "https://passkeys.dev/" },
@@ -191,7 +211,7 @@ const QuickLinks = () => {
     {
       title: "Productivity & Utilities",
       icon: <FaLink />,
-      color: "#f77062", // coral
+    
       links: [
         { name: "Excalidraw", url: "https://excalidraw.com/" },
         { name: "Figma", url: "https://www.figma.com/" },
@@ -210,7 +230,7 @@ const QuickLinks = () => {
     {
       title: "File & Data Tools",
       icon: <FaFile />,
-      color: "#36d1c4", // cyan
+     
       links: [
         { name: "Remove.bg", url: "https://www.remove.bg/" },
         { name: "TinyPNG", url: "https://tinypng.com/" },
@@ -232,7 +252,7 @@ const QuickLinks = () => {
     {
       title: "Learning Platforms",
       icon: <FaGraduationCap />,
-      color: "#fdc830", // yellow
+   
       links: [
         { name: "Udemy", url: "https://udemy.com/" },
         { name: "Coursera", url: "https://coursera.org/" },
@@ -248,12 +268,15 @@ const QuickLinks = () => {
     {
       title: "APIs & Public Data",
       icon: <FaLink />,
-      color: "#8fd3f4", // light blue
+    
       links: [
         { name: "RapidAPI", url: "https://rapidapi.com/" },
         { name: "Public APIs", url: "https://public-apis.io/" },
         { name: "API List", url: "https://apilist.fun/" },
-        { name: "Awesome-APIs", url: "https://github.com/Kikobeats/awesome-api" },
+        {
+          name: "Awesome-APIs",
+          url: "https://github.com/Kikobeats/awesome-api",
+        },
         { name: "OpenWeatherMap", url: "https://openweathermap.org/api" },
         { name: "NewsAPI", url: "https://newsapi.org/" },
         { name: "IP Geolocation API", url: "https://ipgeolocation.io/" },
@@ -263,7 +286,7 @@ const QuickLinks = () => {
     {
       title: "Analytics & Monitoring",
       icon: <FaCode />,
-      color: "#FF6B6B",
+    
       links: [
         { name: "Google Analytics", url: "https://analytics.google.com/" },
         { name: "Mixpanel", url: "https://mixpanel.com/" },
@@ -280,7 +303,7 @@ const QuickLinks = () => {
     {
       title: "E-commerce Tools",
       icon: <FaLink />,
-      color: "#667eea",
+     
       links: [
         { name: "Shopify", url: "https://www.shopify.com/" },
         { name: "WooCommerce", url: "https://woocommerce.com/" },
@@ -297,9 +320,12 @@ const QuickLinks = () => {
     {
       title: "Marketing & SEO",
       icon: <FaLink />,
-      color: "#f093fb",
+    
       links: [
-        { name: "Google Search Console", url: "https://search.google.com/search-console" },
+        {
+          name: "Google Search Console",
+          url: "https://search.google.com/search-console",
+        },
         { name: "SEMrush", url: "https://www.semrush.com/" },
         { name: "Ahrefs", url: "https://ahrefs.com/" },
         { name: "Moz", url: "https://moz.com/" },
@@ -314,7 +340,7 @@ const QuickLinks = () => {
     {
       title: "DevOps & CI/CD",
       icon: <FaCode />,
-      color: "#00c6ff",
+    
       links: [
         { name: "GitHub Actions", url: "https://github.com/features/actions" },
         { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ee/ci/" },
@@ -341,7 +367,7 @@ const QuickLinks = () => {
     {
       title: "Mobile Development",
       icon: <FaCode />,
-      color: "#FF6B35",
+    
       links: [
         { name: "React Native", url: "https://reactnative.dev/" },
         { name: "Flutter", url: "https://flutter.dev/" },
@@ -353,9 +379,15 @@ const QuickLinks = () => {
         { name: "Kotlin", url: "https://kotlinlang.org/" },
         { name: "Android Studio", url: "https://developer.android.com/studio" },
         { name: "Xcode", url: "https://developer.apple.com/xcode/" },
-        { name: "App Store Connect", url: "https://appstoreconnect.apple.com/" },
+        {
+          name: "App Store Connect",
+          url: "https://appstoreconnect.apple.com/",
+        },
         { name: "Google Play Console", url: "https://play.google.com/console" },
-        { name: "Firebase App Distribution", url: "https://firebase.google.com/products/app-distribution" },
+        {
+          name: "Firebase App Distribution",
+          url: "https://firebase.google.com/products/app-distribution",
+        },
         { name: "TestFlight", url: "https://developer.apple.com/testflight/" },
         { name: "Appium", url: "http://appium.io/" },
         { name: "Detox", url: "https://wix.github.io/Detox/" },
@@ -364,7 +396,7 @@ const QuickLinks = () => {
     {
       title: "Game Development",
       icon: <FaCode />,
-      color: "#8A2BE2",
+     
       links: [
         { name: "Unity", url: "https://unity.com/" },
         { name: "Unreal Engine", url: "https://www.unrealengine.com/" },
@@ -379,15 +411,21 @@ const QuickLinks = () => {
         { name: "Steamworks", url: "https://partner.steamgames.com/" },
         { name: "Epic Games Store", url: "https://dev.epicgames.com/portal/" },
         { name: "Unity Asset Store", url: "https://assetstore.unity.com/" },
-        { name: "Unreal Marketplace", url: "https://www.unrealengine.com/marketplace" },
+        {
+          name: "Unreal Marketplace",
+          url: "https://www.unrealengine.com/marketplace",
+        },
         { name: "Blender", url: "https://www.blender.org/" },
-        { name: "Maya", url: "https://www.autodesk.com/products/maya/overview" },
+        {
+          name: "Maya",
+          url: "https://www.autodesk.com/products/maya/overview",
+        },
       ],
     },
     {
       title: "Blockchain & Web3",
       icon: <FaLink />,
-      color: "#FFD700",
+     
       links: [
         { name: "Ethereum", url: "https://ethereum.org/" },
         { name: "Solidity", url: "https://soliditylang.org/" },
@@ -410,7 +448,7 @@ const QuickLinks = () => {
     {
       title: "AI & Machine Learning",
       icon: <FaRobot />,
-      color: "#FF1493",
+   
       links: [
         { name: "TensorFlow", url: "https://www.tensorflow.org/" },
         { name: "PyTorch", url: "https://pytorch.org/" },
@@ -433,7 +471,7 @@ const QuickLinks = () => {
     {
       title: "Cloud Services",
       icon: <FaServer />,
-      color: "#00CED1",
+     
       links: [
         { name: "AWS", url: "https://aws.amazon.com/" },
         { name: "Google Cloud", url: "https://cloud.google.com/" },
@@ -448,15 +486,21 @@ const QuickLinks = () => {
         { name: "Netlify", url: "https://www.netlify.com/" },
         { name: "Cloudflare", url: "https://www.cloudflare.com/" },
         { name: "AWS Lambda", url: "https://aws.amazon.com/lambda/" },
-        { name: "Google Cloud Functions", url: "https://cloud.google.com/functions" },
-        { name: "Azure Functions", url: "https://azure.microsoft.com/en-us/products/functions" },
+        {
+          name: "Google Cloud Functions",
+          url: "https://cloud.google.com/functions",
+        },
+        {
+          name: "Azure Functions",
+          url: "https://azure.microsoft.com/en-us/products/functions",
+        },
         { name: "Cloud Run", url: "https://cloud.google.com/run" },
       ],
     },
     {
       title: "Design & Prototyping",
       icon: <FaPalette />,
-      color: "#FF69B4",
+    
       links: [
         { name: "Figma", url: "https://www.figma.com/" },
         { name: "Adobe XD", url: "https://www.adobe.com/products/xd.html" },
@@ -479,7 +523,7 @@ const QuickLinks = () => {
     {
       title: "Content Management",
       icon: <FaFile />,
-      color: "#32CD32",
+     
       links: [
         { name: "WordPress", url: "https://wordpress.org/" },
         { name: "Drupal", url: "https://www.drupal.org/" },
@@ -502,7 +546,7 @@ const QuickLinks = () => {
     {
       title: "API Documentation",
       icon: <FaLink />,
-      color: "#9370DB",
+     
       links: [
         { name: "Swagger", url: "https://swagger.io/" },
         { name: "Postman", url: "https://www.postman.com/" },
@@ -533,12 +577,14 @@ const QuickLinks = () => {
   };
 
   const filteredCategories = searchTerm
-    ? categories.map(category => ({
-      ...category,
-      links: category.links.filter(link =>
-        link.name.toLowerCase().includes(searchTerm.toLowerCase())
-      )
-    })).filter(category => category.links.length > 0)
+    ? categories
+        .map((category) => ({
+          ...category,
+          links: category.links.filter((link) =>
+            link.name.toLowerCase().includes(searchTerm.toLowerCase())
+          ),
+        }))
+        .filter((category) => category.links.length > 0)
     : categories;
 
   return (
@@ -570,11 +616,20 @@ const QuickLinks = () => {
             key={category.title}
             className="category-card"
             style={{
-              background: `linear-gradient(135deg, ${category.color} 0%, #232526 100%)`,
-              border: `2px solid ${hoveredCategory === category.title ? category.color : "rgba(49,130,206,0.12)"}`,
-              boxShadow: hoveredCategory === category.title
-                ? `0 0 12px 2px ${category.color}80` // 80 = 50% opacity
-                : "0 8px 32px 0 rgba(31, 38, 135, 0.18)"
+              background:
+                hoveredCategory === category.title
+                  ? `linear-gradient(135deg, ${category.color} )`
+                  : `linear-gradient(135deg, #ffffff )`,
+
+              border:
+                hoveredCategory === category.title
+                  ? `2px solid ${category.color}`
+                  : "2px solid rgba(49,130,206,0.12)",
+
+              boxShadow:
+                hoveredCategory === category.title
+                  ? `0 0 12px 2px ${category.color}80` // 50% opacity
+                  : "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
             }}
             onMouseEnter={() => setHoveredCategory(category.title)}
             onMouseLeave={() => setHoveredCategory(null)}
@@ -583,13 +638,21 @@ const QuickLinks = () => {
               className="category-header"
               onClick={() => handleCategoryClick(category.title)}
             >
-              <span className={`category-icon${expandedCategory === category.title ? ' bounce' : ''}`}>
+              <span
+                className={`category-icon${
+                  expandedCategory === category.title ? " bounce" : ""
+                }`}
+              >
                 {category.icon}
               </span>
               <h2>{category.title}</h2>
               <span className="link-count">{category.links.length}</span>
             </div>
-            <div className={`links-container ${expandedCategory === category.title ? 'expanded' : ''}`}>
+            <div
+              className={`links-container ${
+                expandedCategory === category.title ? "expanded" : ""
+              }`}
+            >
               {category.links.map((link) => (
                 <button
                   key={link.name}
