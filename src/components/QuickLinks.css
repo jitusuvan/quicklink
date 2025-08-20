@@ -1,6 +1,7 @@
-
-
-
+.app-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
 
 .categories-grid {
   display: grid;
@@ -9,7 +10,7 @@
 }
 
 .category-card {
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -47,7 +48,7 @@
   font-weight: bold;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,10 +70,11 @@
 
 .link-button {
   padding: 8px 12px;
-  background-color: #edf2f7;
+  background: transparent; 
   border: none;
   border-radius: 6px;
   font-size: 14px;
+  font-family: 'GeistSans', sans-serif;
   color: #2d3748;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
@@ -80,10 +82,15 @@
   word-break: break-word;
 }
 
-/* .link-button:hover {
-  background-color: #e2e8f0;
-  transform: translateY(-2px);
-} */
+.link-name{
+    font-family: 'GeistSans', sans-serif;
+}
+
+.link-button:hover {
+  background-color: #4299e1; /* light blue hover */
+  color: #ffffff;            /* white text on hover */
+}
+
 
 .link-button:active {
   transform: translateY(0);

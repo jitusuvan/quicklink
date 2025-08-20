@@ -14,8 +14,7 @@ import {
 import "./QuickLinks.css";
 import logo from "/Devdecks_App_Logo_with_Vibrant_Contrast-removebg-preview (1).png";
 
-const QuickLinks = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+const QuickLinks = ({ links, searchTerm = '' }) => {
   const [expandedCategory, setExpandedCategory] = useState(null);
   const [hoveredCategory, setHoveredCategory] = useState(null);
 
@@ -587,60 +586,50 @@ const QuickLinks = () => {
         .filter((category) => category.links.length > 0)
     : categories;
 
-  return (
+ return (
     <div className="app-container">
-      <div className="categories-grid">
-        {filteredCategories.map((category) => (
-          <div
-            key={category.title}
-            className="category-card"
-            style={{
-              background:
-                hoveredCategory === category.title
-                  ? `linear-gradient(135deg, ${category.color} )`
-                  : `linear-gradient(135deg, #ffffff )`,
+  <div className="categories-grid">
+    {filteredCategories.map((category) => (
+      <div
+        key={category.title}
+        className="category-card"
+        onMouseEnter={() => setHoveredCategory(category.title)}
+        onMouseLeave={() => setHoveredCategory(null)}
+      >
+        {/* Header Section */}
+        <div
+          className="category-header"
+          style={{
+            backgroundColor: category.color,
+          }}
+          onClick={() => handleCategoryClick(category.title)}
+        >
+          <h2>{category.title}</h2>
+          <span className="link-count">{category.links.length}</span>
+        </div>
 
-              border:
-                hoveredCategory === category.title
-                  ? `2px solid ${category.color}`
-                  : "2px solid rgba(49,130,206,0.12)",
-            }}
-            onMouseEnter={() => setHoveredCategory(category.title)}
-            onMouseLeave={() => setHoveredCategory(null)}
-          >
-            <div
-              className="category-header"
-              onClick={() => handleCategoryClick(category.title)}
+        {/* Links Section */}
+        <div
+          className={`links-container ${
+            expandedCategory === category.title ? "expanded" : ""
+          }`}
+        >
+          {category.links.map((link) => (
+            <button
+              key={link.name}
+              className="link-button"
+              onClick={() => handleClick(link.url)}
             >
-              <span
-                className={`category-icon${
-                  expandedCategory === category.title ? " bounce" : ""
-                }`}
-              >
-                {category.icon}
-              </span>
-              <h2>{category.title}</h2>
-              <span className="link-count">{category.links.length}</span>
-            </div>
-            <div
-              className={`links-container ${
-                expandedCategory === category.title ? "expanded" : ""
-              }`}
-            >
-              {category.links.map((link) => (
-                <button
-                  key={link.name}
-                  className="link-button"
-                  onClick={() => handleClick(link.url)}
-                >
-                  {link.name}
-                </button>
-              ))}
-            </div>
-          </div>
-        ))}
+              {link.icon && <span className="link-icon">{link.icon}</span>}
+              {link.name}
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
+    ))}
+  </div>
+</div> 
+
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo from '/Devdecks_App_Logo_with_Vibrant_Contrast-removebg-preview (1).png';
+import logo from '/devdecks(6).png';
 
 const Header = ({ searchTerm, setSearchTerm }) => {
   return (
@@ -12,7 +12,7 @@ const Header = ({ searchTerm, setSearchTerm }) => {
             alt="QuickLinks Logo" 
             className="header-logo"
           />
-          <h1 className="header-title">DEVDECKS</h1>
+          {/* <h1 className="header-title">DEVDECKS</h1> */}
         </div>
         <div className="search-container">
           <input
