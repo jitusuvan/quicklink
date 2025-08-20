@@ -23,7 +23,7 @@ const QuickLinks = () => {
     {
       title: "AI Code Assistants",
       icon: <FaCode />,
-    
+
       links: [
         { name: "ChatGPT", url: "https://chatgpt.com/" },
         { name: "Claude AI", url: "https://claude.ai/" },
@@ -45,7 +45,7 @@ const QuickLinks = () => {
     {
       title: "UI Generators & Builders",
       icon: <FaPalette />,
-    
+
       links: [
         { name: "v0.dev", url: "https://v0.dev/" },
         { name: "Builder.io", url: "https://www.builder.io/" },
@@ -61,7 +61,7 @@ const QuickLinks = () => {
     {
       title: "Deployment & Hosting",
       icon: <FaServer />,
-    
+
       links: [
         { name: "Vercel", url: "https://vercel.com/" },
         { name: "Netlify", url: "https://www.netlify.com/" },
@@ -80,7 +80,7 @@ const QuickLinks = () => {
     {
       title: "Developer Tools",
       icon: <FaCode />,
-     
+
       links: [
         { name: "GitHub", url: "https://github.com/" },
         { name: "Stack Overflow", url: "https://stackoverflow.com/" },
@@ -103,7 +103,7 @@ const QuickLinks = () => {
     {
       title: "Testing Tools",
       icon: <FaCode />,
-     
+
       links: [
         { name: "Cypress", url: "https://www.cypress.io/" },
         { name: "Playwright", url: "https://playwright.dev/" },
@@ -117,7 +117,7 @@ const QuickLinks = () => {
     {
       title: "Icons & Graphics",
       icon: <FaIcons />,
-     
+
       links: [
         { name: "LottieFiles", url: "https://lottiefiles.com/" },
         { name: "Flaticon", url: "https://www.flaticon.com/" },
@@ -140,7 +140,7 @@ const QuickLinks = () => {
     {
       title: "UI Libraries & Design",
       icon: <FaPalette />,
-    
+
       links: [
         { name: "Material-UI", url: "https://mui.com/" },
         { name: "Ant Design", url: "https://ant.design/" },
@@ -163,7 +163,7 @@ const QuickLinks = () => {
     {
       title: "Printing & Formatting",
       icon: <FaPrint />,
-    
+
       links: [
         { name: "PrintJS", url: "https://printjs.crabbly.com/" },
         { name: "PDF.js", url: "https://mozilla.github.io/pdf.js/" },
@@ -179,7 +179,7 @@ const QuickLinks = () => {
     {
       title: "Databases & Backend",
       icon: <FaDatabase />,
-    
+
       links: [
         { name: "MongoDB", url: "https://www.mongodb.com/" },
         { name: "Firebase Firestore", url: "https://firebase.google.com/" },
@@ -195,7 +195,7 @@ const QuickLinks = () => {
     {
       title: "Auth & Security",
       icon: <FaLink />,
-    
+
       links: [
         { name: "Auth0", url: "https://auth0.com/" },
         {
@@ -211,7 +211,7 @@ const QuickLinks = () => {
     {
       title: "Productivity & Utilities",
       icon: <FaLink />,
-    
+
       links: [
         { name: "Excalidraw", url: "https://excalidraw.com/" },
         { name: "Figma", url: "https://www.figma.com/" },
@@ -230,7 +230,7 @@ const QuickLinks = () => {
     {
       title: "File & Data Tools",
       icon: <FaFile />,
-     
+
       links: [
         { name: "Remove.bg", url: "https://www.remove.bg/" },
         { name: "TinyPNG", url: "https://tinypng.com/" },
@@ -252,7 +252,7 @@ const QuickLinks = () => {
     {
       title: "Learning Platforms",
       icon: <FaGraduationCap />,
-   
+
       links: [
         { name: "Udemy", url: "https://udemy.com/" },
         { name: "Coursera", url: "https://coursera.org/" },
@@ -268,7 +268,7 @@ const QuickLinks = () => {
     {
       title: "APIs & Public Data",
       icon: <FaLink />,
-    
+
       links: [
         { name: "RapidAPI", url: "https://rapidapi.com/" },
         { name: "Public APIs", url: "https://public-apis.io/" },
@@ -286,7 +286,7 @@ const QuickLinks = () => {
     {
       title: "Analytics & Monitoring",
       icon: <FaCode />,
-    
+
       links: [
         { name: "Google Analytics", url: "https://analytics.google.com/" },
         { name: "Mixpanel", url: "https://mixpanel.com/" },
@@ -303,7 +303,7 @@ const QuickLinks = () => {
     {
       title: "E-commerce Tools",
       icon: <FaLink />,
-     
+
       links: [
         { name: "Shopify", url: "https://www.shopify.com/" },
         { name: "WooCommerce", url: "https://woocommerce.com/" },
@@ -320,7 +320,7 @@ const QuickLinks = () => {
     {
       title: "Marketing & SEO",
       icon: <FaLink />,
-    
+
       links: [
         {
           name: "Google Search Console",
@@ -340,7 +340,7 @@ const QuickLinks = () => {
     {
       title: "DevOps & CI/CD",
       icon: <FaCode />,
-    
+
       links: [
         { name: "GitHub Actions", url: "https://github.com/features/actions" },
         { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ee/ci/" },
@@ -367,7 +367,7 @@ const QuickLinks = () => {
     {
       title: "Mobile Development",
       icon: <FaCode />,
-    
+
       links: [
         { name: "React Native", url: "https://reactnative.dev/" },
         { name: "Flutter", url: "https://flutter.dev/" },
@@ -396,7 +396,7 @@ const QuickLinks = () => {
     {
       title: "Game Development",
       icon: <FaCode />,
-     
+
       links: [
         { name: "Unity", url: "https://unity.com/" },
         { name: "Unreal Engine", url: "https://www.unrealengine.com/" },
@@ -425,7 +425,7 @@ const QuickLinks = () => {
     {
       title: "Blockchain & Web3",
       icon: <FaLink />,
-     
+
       links: [
         { name: "Ethereum", url: "https://ethereum.org/" },
         { name: "Solidity", url: "https://soliditylang.org/" },
@@ -448,7 +448,7 @@ const QuickLinks = () => {
     {
       title: "AI & Machine Learning",
       icon: <FaRobot />,
-   
+
       links: [
         { name: "TensorFlow", url: "https://www.tensorflow.org/" },
         { name: "PyTorch", url: "https://pytorch.org/" },
@@ -471,7 +471,7 @@ const QuickLinks = () => {
     {
       title: "Cloud Services",
       icon: <FaServer />,
-     
+
       links: [
         { name: "AWS", url: "https://aws.amazon.com/" },
         { name: "Google Cloud", url: "https://cloud.google.com/" },
@@ -500,7 +500,7 @@ const QuickLinks = () => {
     {
       title: "Design & Prototyping",
       icon: <FaPalette />,
-    
+
       links: [
         { name: "Figma", url: "https://www.figma.com/" },
         { name: "Adobe XD", url: "https://www.adobe.com/products/xd.html" },
@@ -523,7 +523,7 @@ const QuickLinks = () => {
     {
       title: "Content Management",
       icon: <FaFile />,
-     
+
       links: [
         { name: "WordPress", url: "https://wordpress.org/" },
         { name: "Drupal", url: "https://www.drupal.org/" },
@@ -546,7 +546,7 @@ const QuickLinks = () => {
     {
       title: "API Documentation",
       icon: <FaLink />,
-     
+
       links: [
         { name: "Swagger", url: "https://swagger.io/" },
         { name: "Postman", url: "https://www.postman.com/" },
@@ -589,27 +589,6 @@ const QuickLinks = () => {
 
   return (
     <div className="app-container">
-      <header className="header">
-        <div className="logo-container">
-          <img src={logo} alt="Quick Links Logo" width="100" height="100" />
-          <h1>DEVDECKS</h1>
-        </div>
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Search resources..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="search-input"
-          />
-        </div>
-      </header>
-
-      <nav className="category-nav">
-        <button>All Categories</button>
-        {/* Add more category buttons here */}
-      </nav>
-
       <div className="categories-grid">
         {filteredCategories.map((category) => (
           <div
@@ -625,11 +604,6 @@ const QuickLinks = () => {
                 hoveredCategory === category.title
                   ? `2px solid ${category.color}`
                   : "2px solid rgba(49,130,206,0.12)",
-
-              boxShadow:
-                hoveredCategory === category.title
-                  ? `0 0 12px 2px ${category.color}80` // 50% opacity
-                  : "0 8px 32px 0 rgba(31, 38, 135, 0.18)",
             }}
             onMouseEnter={() => setHoveredCategory(category.title)}
             onMouseLeave={() => setHoveredCategory(null)}

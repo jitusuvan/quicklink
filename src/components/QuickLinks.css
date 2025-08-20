@@ -1,49 +1,6 @@
-.app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.logo-container h1 {
-  margin: 0;
-  font-size: 28px;
-  color: #333;
-}
-
-.search-container {
-  flex-grow: 1;
-  max-width: 500px;
-}
-
-.search-input {
-  width: 100%;
-  padding: 10px 15px;
-  border: 2px solid #e1e1e1;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #3182ce;
-}
 
 .categories-grid {
   display: grid;

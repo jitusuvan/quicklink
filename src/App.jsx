@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import QuickLinks from './components/QuickLinks'
-
+import React from 'react';
+import './App.css';
+import Header from './components/Header';
+import QuickLinks from './components/QuickLinks';
 
 function App() {
-
-
   return (
-    <>
-     <QuickLinks />
-    </>
-  )
+    <div className="app">
+      <Header />
+      <main className="main-content">
+        <QuickLinks />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
