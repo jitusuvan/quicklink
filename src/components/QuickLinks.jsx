@@ -7,29 +7,28 @@ const QuickLinks = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedCategory, setExpandedCategory] = useState(null);
   const [hoveredCategory, setHoveredCategory] = useState(null);
-
+  
   const categories = [
-
     {
       title: "AI Code Assistants",
       icon: <FaCode />,
       color: "#9D50BB",
       links: [
         { name: "ChatGPT", url: "https://chatgpt.com/" },
-    { name: "Claude AI", url: "https://claude.ai/" },
-    { name: "Perplexity AI", url: "https://www.perplexity.ai/" },
-    { name: "Gemini", url: "https://gemini.google.com/" },
-    { name: "Suno AI", url: "https://www.suno.com/" },
-    { name: "Leonardo AI", url: "https://leonardo.ai/" },
-    { name: "Runway ML", url: "https://runwayml.com/" },
-    { name: "Midjourney", url: "https://www.midjourney.com/" },
-    { name: "Phind", url: "https://www.phind.com/" },
-    { name: "DeepSeek AI", url: "https://www.deepseek.com/" },
-    { name: "Bolt AI", url: "https://bolt.new/" },
-    { name: "ElevenLabs", url: "https://elevenlabs.io/" },
-    { name: "Cursor AI", url: "https://www.cursor.so/" },
-    { name: "Blackbox AI", url: "https://www.useblackbox.io/" },
-    { name: "v0.dev", url: "https://v0.dev/" },
+        { name: "Claude AI", url: "https://claude.ai/" },
+        { name: "Perplexity AI", url: "https://www.perplexity.ai/" },
+        { name: "Gemini", url: "https://gemini.google.com/" },
+        { name: "Suno AI", url: "https://www.suno.com/" },
+        { name: "Leonardo AI", url: "https://leonardo.ai/" },
+        { name: "Runway ML", url: "https://runwayml.com/" },
+        { name: "Midjourney", url: "https://www.midjourney.com/" },
+        { name: "Phind", url: "https://www.phind.com/" },
+        { name: "DeepSeek AI", url: "https://www.deepseek.com/" },
+        { name: "Bolt AI", url: "https://bolt.new/" },
+        { name: "ElevenLabs", url: "https://elevenlabs.io/" },
+        { name: "Cursor AI", url: "https://www.cursor.so/" },
+        { name: "Blackbox AI", url: "https://www.useblackbox.io/" },
+        { name: "v0.dev", url: "https://v0.dev/" },
       ],
     },
     {
@@ -125,7 +124,6 @@ const QuickLinks = () => {
         { name: "Noun Project", url: "https://thenounproject.com/" },
         { name: "Hero Patterns", url: "https://heropatterns.com/" },
         { name: "Iconfinder", url: "https://www.iconfinder.com/" },
-
       ],
     },
     {
@@ -262,6 +260,268 @@ const QuickLinks = () => {
         { name: "NASA Open APIs", url: "https://api.nasa.gov/" },
       ],
     },
+    {
+      title: "Analytics & Monitoring",
+      icon: <FaCode />,
+      color: "#FF6B6B",
+      links: [
+        { name: "Google Analytics", url: "https://analytics.google.com/" },
+        { name: "Mixpanel", url: "https://mixpanel.com/" },
+        { name: "Hotjar", url: "https://www.hotjar.com/" },
+        { name: "Amplitude", url: "https://amplitude.com/" },
+        { name: "Segment", url: "https://segment.com/" },
+        { name: "Plausible", url: "https://plausible.io/" },
+        { name: "Fathom Analytics", url: "https://usefathom.com/" },
+        { name: "Matomo", url: "https://matomo.org/" },
+        { name: "Sentry", url: "https://sentry.io/" },
+        { name: "LogRocket", url: "https://logrocket.com/" },
+      ],
+    },
+    {
+      title: "E-commerce Tools",
+      icon: <FaLink />,
+      color: "#667eea",
+      links: [
+        { name: "Shopify", url: "https://www.shopify.com/" },
+        { name: "WooCommerce", url: "https://woocommerce.com/" },
+        { name: "Stripe", url: "https://stripe.com/" },
+        { name: "PayPal", url: "https://www.paypal.com/" },
+        { name: "Square", url: "https://squareup.com/" },
+        { name: "BigCommerce", url: "https://www.bigcommerce.com/" },
+        { name: "Magento", url: "https://magento.com/" },
+        { name: "Gumroad", url: "https://gumroad.com/" },
+        { name: "Snipcart", url: "https://snipcart.com/" },
+        { name: "Ecwid", url: "https://www.ecwid.com/" },
+      ],
+    },
+    {
+      title: "Marketing & SEO",
+      icon: <FaLink />,
+      color: "#f093fb",
+      links: [
+        { name: "Google Search Console", url: "https://search.google.com/search-console" },
+        { name: "SEMrush", url: "https://www.semrush.com/" },
+        { name: "Ahrefs", url: "https://ahrefs.com/" },
+        { name: "Moz", url: "https://moz.com/" },
+        { name: "Yoast SEO", url: "https://yoast.com/" },
+        { name: "Buffer", url: "https://buffer.com/" },
+        { name: "Hootsuite", url: "https://hootsuite.com/" },
+        { name: "Canva", url: "https://www.canva.com/" },
+        { name: "Mailchimp", url: "https://mailchimp.com/" },
+        { name: "ConvertKit", url: "https://convertkit.com/" },
+      ],
+    },
+    {
+      title: "DevOps & CI/CD",
+      icon: <FaCode />,
+      color: "#00c6ff",
+      links: [
+        { name: "GitHub Actions", url: "https://github.com/features/actions" },
+        { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ee/ci/" },
+        { name: "Jenkins", url: "https://www.jenkins.io/" },
+        { name: "CircleCI", url: "https://circleci.com/" },
+        { name: "Travis CI", url: "https://travis-ci.org/" },
+        { name: "Docker Hub", url: "https://hub.docker.com/" },
+        { name: "Kubernetes", url: "https://kubernetes.io/" },
+        { name: "Terraform", url: "https://www.terraform.io/" },
+        { name: "Ansible", url: "https://www.ansible.com/" },
+        { name: "AWS Console", url: "https://console.aws.amazon.com/" },
+        { name: "Azure DevOps", url: "https://dev.azure.com/" },
+        { name: "GCP Console", url: "https://console.cloud.google.com/" },
+        { name: "Pulumi", url: "https://www.pulumi.com/" },
+        { name: "Helm", url: "https://helm.sh/" },
+        { name: "ArgoCD", url: "https://argoproj.github.io/cd/" },
+        { name: "Flux", url: "https://fluxcd.io/" },
+        { name: "Prometheus", url: "https://prometheus.io/" },
+        { name: "Grafana", url: "https://grafana.com/" },
+        { name: "Datadog", url: "https://www.datadoghq.com/" },
+        { name: "New Relic", url: "https://newrelic.com/" },
+      ],
+    },
+    {
+      title: "Mobile Development",
+      icon: <FaCode />,
+      color: "#FF6B35",
+      links: [
+        { name: "React Native", url: "https://reactnative.dev/" },
+        { name: "Flutter", url: "https://flutter.dev/" },
+        { name: "Ionic", url: "https://ionicframework.com/" },
+        { name: "NativeScript", url: "https://nativescript.org/" },
+        { name: "Expo", url: "https://expo.dev/" },
+        { name: "Xamarin", url: "https://dotnet.microsoft.com/apps/xamarin" },
+        { name: "Swift", url: "https://swift.org/" },
+        { name: "Kotlin", url: "https://kotlinlang.org/" },
+        { name: "Android Studio", url: "https://developer.android.com/studio" },
+        { name: "Xcode", url: "https://developer.apple.com/xcode/" },
+        { name: "App Store Connect", url: "https://appstoreconnect.apple.com/" },
+        { name: "Google Play Console", url: "https://play.google.com/console" },
+        { name: "Firebase App Distribution", url: "https://firebase.google.com/products/app-distribution" },
+        { name: "TestFlight", url: "https://developer.apple.com/testflight/" },
+        { name: "Appium", url: "http://appium.io/" },
+        { name: "Detox", url: "https://wix.github.io/Detox/" },
+      ],
+    },
+    {
+      title: "Game Development",
+      icon: <FaCode />,
+      color: "#8A2BE2",
+      links: [
+        { name: "Unity", url: "https://unity.com/" },
+        { name: "Unreal Engine", url: "https://www.unrealengine.com/" },
+        { name: "Godot", url: "https://godotengine.org/" },
+        { name: "GameMaker Studio", url: "https://gamemaker.io/" },
+        { name: "Construct", url: "https://www.construct.net/" },
+        { name: "Phaser", url: "https://phaser.io/" },
+        { name: "Three.js", url: "https://threejs.org/" },
+        { name: "Babylon.js", url: "https://www.babylonjs.com/" },
+        { name: "A-Frame", url: "https://aframe.io/" },
+        { name: "itch.io", url: "https://itch.io/" },
+        { name: "Steamworks", url: "https://partner.steamgames.com/" },
+        { name: "Epic Games Store", url: "https://dev.epicgames.com/portal/" },
+        { name: "Unity Asset Store", url: "https://assetstore.unity.com/" },
+        { name: "Unreal Marketplace", url: "https://www.unrealengine.com/marketplace" },
+        { name: "Blender", url: "https://www.blender.org/" },
+        { name: "Maya", url: "https://www.autodesk.com/products/maya/overview" },
+      ],
+    },
+    {
+      title: "Blockchain & Web3",
+      icon: <FaLink />,
+      color: "#FFD700",
+      links: [
+        { name: "Ethereum", url: "https://ethereum.org/" },
+        { name: "Solidity", url: "https://soliditylang.org/" },
+        { name: "Web3.js", url: "https://web3js.readthedocs.io/" },
+        { name: "Ethers.js", url: "https://docs.ethers.io/" },
+        { name: "Hardhat", url: "https://hardhat.org/" },
+        { name: "Truffle", url: "https://www.trufflesuite.com/" },
+        { name: "Ganache", url: "https://www.trufflesuite.com/ganache" },
+        { name: "OpenZeppelin", url: "https://openzeppelin.com/" },
+        { name: "Remix IDE", url: "https://remix.ethereum.org/" },
+        { name: "MetaMask", url: "https://metamask.io/" },
+        { name: "Alchemy", url: "https://www.alchemy.com/" },
+        { name: "Infura", url: "https://infura.io/" },
+        { name: "Moralis", url: "https://moralis.io/" },
+        { name: "Chainlink", url: "https://chain.link/" },
+        { name: "IPFS", url: "https://ipfs.io/" },
+        { name: "The Graph", url: "https://thegraph.com/" },
+      ],
+    },
+    {
+      title: "AI & Machine Learning",
+      icon: <FaRobot />,
+      color: "#FF1493",
+      links: [
+        { name: "TensorFlow", url: "https://www.tensorflow.org/" },
+        { name: "PyTorch", url: "https://pytorch.org/" },
+        { name: "Keras", url: "https://keras.io/" },
+        { name: "Scikit-learn", url: "https://scikit-learn.org/" },
+        { name: "Hugging Face", url: "https://huggingface.co/" },
+        { name: "OpenAI API", url: "https://openai.com/api/" },
+        { name: "Google Colab", url: "https://colab.research.google.com/" },
+        { name: "Kaggle", url: "https://www.kaggle.com/" },
+        { name: "Weights & Biases", url: "https://wandb.ai/site" },
+        { name: "MLflow", url: "https://mlflow.org/" },
+        { name: "Jupyter", url: "https://jupyter.org/" },
+        { name: "NumPy", url: "https://numpy.org/" },
+        { name: "Pandas", url: "https://pandas.pydata.org/" },
+        { name: "Matplotlib", url: "https://matplotlib.org/" },
+        { name: "Seaborn", url: "https://seaborn.pydata.org/" },
+        { name: "Streamlit", url: "https://streamlit.io/" },
+      ],
+    },
+    {
+      title: "Cloud Services",
+      icon: <FaServer />,
+      color: "#00CED1",
+      links: [
+        { name: "AWS", url: "https://aws.amazon.com/" },
+        { name: "Google Cloud", url: "https://cloud.google.com/" },
+        { name: "Microsoft Azure", url: "https://azure.microsoft.com/" },
+        { name: "DigitalOcean", url: "https://www.digitalocean.com/" },
+        { name: "Linode", url: "https://www.linode.com/" },
+        { name: "Vultr", url: "https://www.vultr.com/" },
+        { name: "Heroku", url: "https://www.heroku.com/" },
+        { name: "Railway", url: "https://railway.app/" },
+        { name: "Supabase", url: "https://supabase.com/" },
+        { name: "Vercel", url: "https://vercel.com/" },
+        { name: "Netlify", url: "https://www.netlify.com/" },
+        { name: "Cloudflare", url: "https://www.cloudflare.com/" },
+        { name: "AWS Lambda", url: "https://aws.amazon.com/lambda/" },
+        { name: "Google Cloud Functions", url: "https://cloud.google.com/functions" },
+        { name: "Azure Functions", url: "https://azure.microsoft.com/en-us/products/functions" },
+        { name: "Cloud Run", url: "https://cloud.google.com/run" },
+      ],
+    },
+    {
+      title: "Design & Prototyping",
+      icon: <FaPalette />,
+      color: "#FF69B4",
+      links: [
+        { name: "Figma", url: "https://www.figma.com/" },
+        { name: "Adobe XD", url: "https://www.adobe.com/products/xd.html" },
+        { name: "Sketch", url: "https://www.sketch.com/" },
+        { name: "InVision", url: "https://www.invisionapp.com/" },
+        { name: "Marvel", url: "https://marvelapp.com/" },
+        { name: "Principle", url: "https://principleformac.com/" },
+        { name: "Framer", url: "https://www.framer.com/" },
+        { name: "Axure RP", url: "https://www.axure.com/" },
+        { name: "Balsamiq", url: "https://balsamiq.com/" },
+        { name: "Lucidchart", url: "https://www.lucidchart.com/" },
+        { name: "Miro", url: "https://miro.com/" },
+        { name: "Whimsical", url: "https://whimsical.com/" },
+        { name: "Mural", url: "https://www.mural.co/" },
+        { name: "Zeplin", url: "https://zeplin.io/" },
+        { name: "Abstract", url: "https://www.abstract.com/" },
+        { name: "Avocode", url: "https://avocode.com/" },
+      ],
+    },
+    {
+      title: "Content Management",
+      icon: <FaFile />,
+      color: "#32CD32",
+      links: [
+        { name: "WordPress", url: "https://wordpress.org/" },
+        { name: "Drupal", url: "https://www.drupal.org/" },
+        { name: "Joomla", url: "https://www.joomla.org/" },
+        { name: "Strapi", url: "https://strapi.io/" },
+        { name: "Contentful", url: "https://www.contentful.com/" },
+        { name: "Sanity", url: "https://www.sanity.io/" },
+        { name: "Prismic", url: "https://prismic.io/" },
+        { name: "Ghost", url: "https://ghost.org/" },
+        { name: "Netlify CMS", url: "https://www.netlifycms.org/" },
+        { name: "GraphCMS", url: "https://graphcms.com/" },
+        { name: "Directus", url: "https://directus.io/" },
+        { name: "KeystoneJS", url: "https://keystonejs.com/" },
+        { name: "Payload", url: "https://payloadcms.com/" },
+        { name: "ButterCMS", url: "https://buttercms.com/" },
+        { name: "Storyblok", url: "https://www.storyblok.com/" },
+        { name: "Agility CMS", url: "https://agilitycms.com/" },
+      ],
+    },
+    {
+      title: "API Documentation",
+      icon: <FaLink />,
+      color: "#9370DB",
+      links: [
+        { name: "Swagger", url: "https://swagger.io/" },
+        { name: "Postman", url: "https://www.postman.com/" },
+        { name: "Insomnia", url: "https://insomnia.rest/" },
+        { name: "Stoplight", url: "https://stoplight.io/" },
+        { name: "ReadMe", url: "https://readme.com/" },
+        { name: "Redocly", url: "https://redocly.com/" },
+        { name: "Docusaurus", url: "https://docusaurus.io/" },
+        { name: "GitBook", url: "https://www.gitbook.com/" },
+        { name: "Slate", url: "https://github.com/slatedocs/slate" },
+        { name: "API Blueprint", url: "https://apiblueprint.org/" },
+        { name: "RAML", url: "https://raml.org/" },
+        { name: "OpenAPI", url: "https://www.openapis.org/" },
+        { name: "GraphQL", url: "https://graphql.org/" },
+        { name: "Apollo GraphQL", url: "https://www.apollographql.com/" },
+        { name: "Hasura", url: "https://hasura.io/" },
+        { name: "PostGraphile", url: "https://www.graphile.org/postgraphile/" },
+      ],
+    },
   ];
 
   const handleClick = (url) => {
@@ -283,10 +543,10 @@ const QuickLinks = () => {
 
   return (
     <div className="app-container">
-      <div className="header">
+      <header className="header">
         <div className="logo-container">
           <img src={logo} alt="Quick Links Logo" width="100" height="100" />
-          {/* <h1 style={{ color: "#FFFFFF" }}>DevDecks</h1> */}
+          <h1>DEVDECKS</h1>
         </div>
         <div className="search-container">
           <input
@@ -297,7 +557,12 @@ const QuickLinks = () => {
             className="search-input"
           />
         </div>
-      </div>
+      </header>
+
+      <nav className="category-nav">
+        <button>All Categories</button>
+        {/* Add more category buttons here */}
+      </nav>
 
       <div className="categories-grid">
         {filteredCategories.map((category) => (
@@ -318,7 +583,9 @@ const QuickLinks = () => {
               className="category-header"
               onClick={() => handleCategoryClick(category.title)}
             >
-              <span className={`category-icon${expandedCategory === category.title ? ' bounce' : ''}`}>{category.icon}</span>
+              <span className={`category-icon${expandedCategory === category.title ? ' bounce' : ''}`}>
+                {category.icon}
+              </span>
               <h2>{category.title}</h2>
               <span className="link-count">{category.links.length}</span>
             </div>
