@@ -6,14 +6,14 @@ const Header = ({ searchTerm, setSearchTerm }) => {
   return (
     <header className="app-header">
       <div className="header-container">
+        {/* Logo Section */}
         <div className="logo-section">
-          <img 
-            src={logo} 
-            alt="QuickLinks Logo" 
-            className="header-logo"
-          />
-          {/* <h1 className="header-title">DEVDECKS</h1> */}
+          {/* If you want logo back, uncomment below */}
+          {/* <img src={logo} alt="QuickLinks Logo" className="header-logo" /> */}
+          <h1 className="header-title">DevDecks</h1>
         </div>
+
+        {/* Search Section */}
         <div className="search-container">
           <input
             type="text"
