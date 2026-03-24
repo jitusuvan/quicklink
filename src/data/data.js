@@ -486,5 +486,19 @@ export const categories = [
       { name: "Hasura", url: "https://hasura.io/", icon: "FaDatabase" },
       { name: "PostGraphile", url: "https://www.graphile.org/postgraphile/", icon: "SiGraphql" }
     ]
-  }
+  },
+  {
+  title: "AI Agents & Automation",
+  icon: "FaRobot",
+  links: [
+    { name: "AutoGPT", url: "https://github.com/Torantulino/Auto-GPT", icon: "FaRobot" },
+    { name: "AgentGPT", url: "https://agentgpt.reworkd.ai/", icon: "FaRobot" },
+    { name: "SuperAGI", url: "https://superagi.com/", icon: "FaRobot" },
+    { name: "LangChain", url: "https://www.langchain.com/", icon: "SiLangchain" },
+    { name: "LangGraph", url: "https://langchain-ai.github.io/langgraph/", icon: "SiLangchain" },
+    { name: "CrewAI", url: "https://crewai.com/", icon: "FaUsers" },
+    { name: "Flowise", url: "https://flowiseai.com/", icon: "FaProjectDiagram" },
+    { name: "Dust", url: "https://dust.tt/", icon: "FaCloud" }
+  ]
+}
 ];
