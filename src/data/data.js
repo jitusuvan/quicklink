@@ -500,5 +500,19 @@ export const categories = [
     { name: "Flowise", url: "https://flowiseai.com/", icon: "FaProjectDiagram" },
     { name: "Dust", url: "https://dust.tt/", icon: "FaCloud" }
   ]
+},
+  {
+  title: "Backend Frameworks",
+  icon: "FaServer",
+  links: [
+    { name: "Express.js", url: "https://expressjs.com/", icon: "SiExpress" },
+    { name: "NestJS", url: "https://nestjs.com/", icon: "SiNestjs" },
+    { name: "Fastify", url: "https://fastify.dev/", icon: "SiFastify" },
+    { name: "Django", url: "https://www.djangoproject.com/", icon: "SiDjango" },
+    { name: "Flask", url: "https://flask.palletsprojects.com/", icon: "SiFlask" },
+    { name: "Spring Boot", url: "https://spring.io/projects/spring-boot", icon: "SiSpringboot" },
+    { name: "Ruby on Rails", url: "https://rubyonrails.org/", icon: "SiRubyonrails" },
+    { name: "Laravel", url: "https://laravel.com/", icon: "SiLaravel" }
+  ]
 }
 ];
