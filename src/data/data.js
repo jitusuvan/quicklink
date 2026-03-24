@@ -18,7 +18,10 @@ export const categories = [
       { name: "ElevenLabs", url: "https://elevenlabs.io/", icon: "FaMusic" },
       { name: "Cursor AI", url: "https://www.cursor.so/", icon: "FaCursor" },
       { name: "Blackbox AI", url: "https://www.useblackbox.io/", icon: "FaBox" },
-      { name: "v0.dev", url: "https://v0.dev/", icon: "FaReact" }
+      { name: "v0.dev", url: "https://v0.dev/", icon: "FaReact" },
+      { name: "OpenAI Playground", url: "https://platform.openai.com/playground", icon: "SiOpenai" },
+      { name: "Codeium", url: "https://codeium.com/", icon: "FaCode" },
+      { name: "Tabnine", url: "https://www.tabnine.com/", icon: "FaBrain" }
     ]
   },
   {
@@ -51,7 +54,10 @@ export const categories = [
       { name: "Surge", url: "https://surge.sh/", icon: "FaCloud" },
       { name: "GitHub Pages", url: "https://pages.github.com/", icon: "FaGithub" },
       { name: "Glitch", url: "https://glitch.com/", icon: "FaCode" },
-      { name: "Kinsta", url: "https://kinsta.com/", icon: "FaServer" }
+      { name: "Kinsta", url: "https://kinsta.com/", icon: "FaServer" },
+      { name: "Fly.io", url: "https://fly.io/", icon: "FaCloud" },
+      { name: "AWS Amplify", url: "https://aws.amazon.com/amplify/", icon: "SiAmazonaws" },
+      { name: "Cloudflare Workers", url: "https://workers.cloudflare.com/", icon: "SiCloudflare" }
     ]
   },
   {
@@ -154,7 +160,10 @@ export const categories = [
       { name: "Neon", url: "https://neon.tech/", icon: "FaDatabase" },
       { name: "Prisma", url: "https://www.prisma.io/", icon: "SiPrisma" },
       { name: "Hasura", url: "https://hasura.io/", icon: "FaDatabase" },
-      { name: "FaunaDB", url: "https://fauna.com/", icon: "FaDatabase" }
+      { name: "FaunaDB", url: "https://fauna.com/", icon: "FaDatabase" },
+      { name: "CockroachDB", url: "https://www.cockroachlabs.com/", icon: "FaDatabase" },
+      { name: "SQLite", url: "https://www.sqlite.org/", icon: "FaDatabase" },
+      { name: "MariaDB", url: "https://mariadb.org/", icon: "FaDatabase" }
     ]
   },
   {
@@ -166,7 +175,9 @@ export const categories = [
       { name: "Clerk.dev", url: "https://clerk.dev/", icon: "FaLock" },
       { name: "SuperTokens", url: "https://supertokens.com/", icon: "FaLock" },
       { name: "Passkeys.dev", url: "https://passkeys.dev/", icon: "FaKey" },
-      { name: "JWT.io", url: "https://jwt.io/", icon: "FaCode" }
+      { name: "JWT.io", url: "https://jwt.io/", icon: "FaCode" },
+      { name: "Keycloak", url: "https://www.keycloak.org/", icon: "FaLock" },
+      { name: "Okta", url: "https://www.okta.com/", icon: "FaLock" }
     ]
   },
   {
@@ -308,7 +319,9 @@ export const categories = [
       { name: "Prometheus", url: "https://prometheus.io/", icon: "FaChartLine" },
       { name: "Grafana", url: "https://grafana.com/", icon: "FaChartLine" },
       { name: "Datadog", url: "https://www.datadoghq.com/", icon: "FaChartLine" },
-      { name: "New Relic", url: "https://newrelic.com/", icon: "FaChartLine" }
+      { name: "New Relic", url: "https://newrelic.com/", icon: "FaChartLine" },
+      { name: "Bun", url: "https://bun.sh/", icon: "FaBolt" },
+      { name: "Nx", url: "https://nx.dev/", icon: "FaCode" }
     ]
   },
   {
@@ -499,6 +512,20 @@ export const categories = [
     { name: "CrewAI", url: "https://crewai.com/", icon: "FaUsers" },
     { name: "Flowise", url: "https://flowiseai.com/", icon: "FaProjectDiagram" },
     { name: "Dust", url: "https://dust.tt/", icon: "FaCloud" }
+  ]
+},
+  {
+  title: "Frontend Frameworks",
+  icon: "FaReact",
+  links: [
+    { name: "React", url: "https://react.dev/", icon: "FaReact" },
+    { name: "Next.js", url: "https://nextjs.org/", icon: "SiNextdotjs" },
+    { name: "Vue.js", url: "https://vuejs.org/", icon: "SiVuedotjs" },
+    { name: "Nuxt.js", url: "https://nuxt.com/", icon: "SiNuxtdotjs" },
+    { name: "Angular", url: "https://angular.io/", icon: "SiAngular" },
+    { name: "Svelte", url: "https://svelte.dev/", icon: "SiSvelte" },
+    { name: "SolidJS", url: "https://www.solidjs.com/", icon: "SiSolid" },
+    { name: "Qwik", url: "https://qwik.builder.io/", icon: "SiQwik" }
   ]
 },
   {
